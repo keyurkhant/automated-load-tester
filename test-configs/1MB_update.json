@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Update Entry test with JSON_RTE (1MB) 10 Entries 3 Minutes",
+    "url": "json_put",
+    "method": "PUT",
+    "pathList": "../requestBody/updateRequestBody/bodyList1MB/pathList.json",
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "1",
+      "duration": "3",
+      "unit": "Min"
+    },
+    "limit": 10,
+    "bodyList": "../requestBody/updateRequestBody/bodyList1MB/bodyList.json",
+    "row": 83
+  },
+  {
+    "title": "Update Entry test with JSON_RTE (1MB) 10 Entries 5 Minutes",
+    "url": "json_put",
+    "method": "PUT",
+    "pathList": "../requestBody/updateRequestBody/bodyList1MB/pathList.json",
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "1",
+      "duration": "5",
+      "unit": "Min"
+    },
+    "limit": 10,
+    "bodyList": "../requestBody/updateRequestBody/bodyList1MB/bodyList.json",
+    "row": 84
+  },
+  {
+    "title": "Update Entry test with JSON_RTE (1MB) 10 Entries 10 Minutes",
+    "url": "json_put",
+    "method": "PUT",
+    "pathList": "../requestBody/updateRequestBody/bodyList1MB/pathList.json",
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "1",
+      "duration": "8",
+      "unit": "Min"
+    },
+    "limit": 10,
+    "bodyList": "../requestBody/updateRequestBody/bodyList1MB/bodyList.json",
+    "row": 85
+  },
+  {
+    "title": "Update Entry test without JSON_RTE (1MB) 200 client/sec",
+    "url": "entry_put",
+    "method": "PUT",
+    "pathList": [
+      "v3/content_types/ctwithoutjsonrte1MB/entries/blt9a240d372cc77100"
+    ],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "50",
+      "duration": "3",
+      "unit": "Min"
+    },
+    "limit": 1,
+    "bodyList": ["../requestBody/entryUpdate1MB.json"],
+    "row": 86
+  }
+]

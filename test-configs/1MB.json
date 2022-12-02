@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Create Entry test with JSON_RTE (1MB)",
+    "url": "json_post",
+    "method": "POST",
+    "pathList": ["v3/content_types/maxrtejsonsizeinbytes_1MB/entries"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "50",
+      "duration": "3",
+      "unit": "Min"
+    },
+    "count": 1,
+    "size": 1000000,
+    "limit": 1,
+    "bodyList": ["../requestBody/maxJsonRteSizeInBytes1MB.json"],
+    "row": 78
+  },
+  {
+    "title": "Create Entry test with JSON_RTE (1MB) 20 client/sec",
+    "url": "json_post",
+    "method": "POST",
+    "pathList": ["v3/content_types/maxrtejsonsizeinbytes_1MB/entries"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "20",
+      "duration": "5",
+      "unit": "Min"
+    },
+    "count": 1,
+    "size": 1000000,
+    "limit": 1,
+    "bodyList": ["../requestBody/maxJsonRteSizeInBytes1MB.json"],
+    "row": 79
+  },
+  {
+    "title": "Create Entry test with JSON_RTE (1MB) 10 client/sec",
+    "url": "json_post",
+    "method": "POST",
+    "pathList": ["v3/content_types/maxrtejsonsizeinbytes_1MB/entries"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "10",
+      "duration": "8",
+      "unit": "Min"
+    },
+    "count": 1,
+    "size": 1000000,
+    "limit": 1,
+    "bodyList": ["../requestBody/maxJsonRteSizeInBytes1MB.json"],
+    "row": 80
+  },
+  {
+    "title": "Create Entry test without JSON_RTE (1MB) 50 client/sec",
+    "url": "entry_post",
+    "method": "POST",
+    "pathList": ["v3/content_types/ctwithoutjsonrte1MB/entries"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "50",
+      "duration": "3",
+      "unit": "Min"
+    },
+    "limit": 1,
+    "bodyList": ["../requestBody/entryCreate1MB.json"],
+    "row": 81
+  },
+  {
+    "title": "GET Entry test with JSON_RTE (1MB) 50 client/sec",
+    "url": "json_get",
+    "method": "GET",
+    "pathList": ["v3/content_types/maxrtejsonsizeinbytes_1MB/entries/blta5cbc8f432a933fc"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "50",
+      "duration": "3",
+      "unit": "Min"
+    },
+    "limit": 1,
+    "row": 88
+  },
+  {
+    "title": "GET Entry test with JSON_RTE (1MB) 100 client/sec",
+    "url": "json_get",
+    "method": "GET",
+    "pathList": ["v3/content_types/maxrtejsonsizeinbytes_1MB/entries/blta5cbc8f432a933fc"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "100",
+      "duration": "5",
+      "unit": "Min"
+    },
+    "limit": 1,
+    "row": 89
+  },
+  {
+    "title": "GET Entry test with JSON_RTE (1MB) 200 client/sec",
+    "url": "json_get",
+    "method": "GET",
+    "pathList": ["v3/content_types/maxrtejsonsizeinbytes_1MB/entries/blta5cbc8f432a933fc"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "200",
+      "duration": "8",
+      "unit": "Min"
+    },
+    "limit": 1,
+    "row": 90
+  },
+  {
+    "title": "GET Entry test without JSON_RTE (1MB) 200 client/sec",
+    "url": "entry_get",
+    "method": "GET",
+    "pathList": ["v3/content_types/ctwithoutjsonrte1MB/entries/blt62c764f657b7003d"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "200",
+      "duration": "8",
+      "unit": "Min"
+    },
+    "limit": 1,
+    "row": 91
+  }
+]

@@ -1,0 +1,214 @@
+[
+    {
+        "title": "Create Entry test with JSON_RTE (30KB)",
+        "url": "json_post",
+        "method": "POST",
+        "pathList": ["v3/content_types/maxrtejsonsizeinbytes_30kb/entries"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "50",
+          "duration": "3",
+          "unit": "Min"
+        },
+        "count": 1,
+        "size": 30000,
+        "limit": 1,
+        "bodyList": ["../requestBody/maxJsonRteSizeInBytes30KB.json"],
+        "row": 17
+      },
+      {
+        "title": "Create Entry test with JSON_RTE (30KB) 100 client/sec",
+        "url": "json_post",
+        "method": "POST",
+        "pathList": ["v3/content_types/maxrtejsonsizeinbytes_30kb/entries"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "100",
+          "duration": "5",
+          "unit": "Min"
+        },
+        "count": 1,
+        "size": 30000,
+        "limit": 1,
+        "bodyList": ["../requestBody/maxJsonRteSizeInBytes30KB.json"],
+        "row": 18
+      },
+      {
+        "title": "Create Entry test with JSON_RTE (30KB) 200 client/sec",
+        "url": "json_post",
+        "method": "POST",
+        "pathList": ["v3/content_types/maxrtejsonsizeinbytes_30kb/entries"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "200",
+          "duration": "8",
+          "unit": "Min"
+        },
+        "count": 1,
+        "size": 30000,
+        "limit": 1,
+        "bodyList": ["../requestBody/maxJsonRteSizeInBytes30KB.json"],
+        "row": 19
+      },
+      {
+        "title": "Create Entry test without JSON_RTE (30KB) 200 client/sec",
+        "url": "entry_post",
+        "method": "POST",
+        "pathList": ["v3/content_types/ctwithoutjsonrte30kb/entries"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "200",
+          "duration": "8",
+          "unit": "Min"
+        },
+        "limit": 1,
+        "bodyList": ["../requestBody/entryCreate30KB.json"],
+        "row": 20,
+        "only": true
+      },
+      {
+        "title": "GET Entry test with JSON_RTE (30KB) 50 client/sec",
+        "url": "json_get",
+        "method": "GET",
+        "pathList": ["v3/content_types/maxrtejsonsizeinbytes_30kb/entries/bltb90eccb2449309b2"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "50",
+          "duration": "3",
+          "unit": "Min"
+        },
+        "limit": 1,
+        "row": 27
+      },
+      {
+        "title": "GET Entry test with JSON_RTE (30KB) 100 client/sec",
+        "url": "json_get",
+        "method": "GET",
+        "pathList": ["v3/content_types/maxrtejsonsizeinbytes_30kb/entries/bltb90eccb2449309b2"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "100",
+          "duration": "5",
+          "unit": "Min"
+        },
+        "limit": 1,
+        "row": 28
+      },
+      {
+        "title": "GET Entry test with JSON_RTE (30KB) 200 client/sec",
+        "url": "json_get",
+        "method": "GET",
+        "pathList": ["v3/content_types/maxrtejsonsizeinbytes_30kb/entries/bltb90eccb2449309b2"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "200",
+          "duration": "8",
+          "unit": "Min"
+        },
+        "limit": 1,
+        "row": 29
+      },
+      {
+        "title": "GET Entry test without JSON_RTE (30KB) 200 client/sec",
+        "url": "entry_get",
+        "method": "GET",
+        "pathList": ["v3/content_types/ctwithoutjsonrte30kb/entries/bltdaa5acdc1b9ae05f"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "200",
+          "duration": "8",
+          "unit": "Min"
+        },
+        "limit": 1,
+        "row": 30
+      },
+      {
+        "title": "GET all entries test with JSON_RTE (30KB) 100 client/sec",
+        "url": "json_getAll",
+        "method": "GET",
+        "pathList": ["v3/content_types/maxrtejsonsizeinbytes_30kb/entries"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "100",
+          "duration": "5",
+          "unit": "Min"
+        },
+        "limit": 1,
+        "row": 93
+      },
+      {
+        "title": "GET all entries test with JSON_RTE (30KB) 300 client/sec",
+        "url": "json_getAll",
+        "method": "GET",
+        "pathList": ["v3/content_types/maxrtejsonsizeinbytes_30kb/entries"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "300",
+          "duration": "10",
+          "unit": "Min"
+        },
+        "limit": 1,
+        "row": 94
+      },
+      {
+        "title": "Create Entry test with JSON_RTE (30KB) 3 RTE",
+        "url": "json_post",
+        "method": "POST",
+        "pathList": ["v3/content_types/jsonrte_size_30kb/entries"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "100",
+          "duration": "8",
+          "unit": "Min"
+        },
+        "size": 30000,
+        "count": 3,
+        "limit": 1,
+        "row": 105
+      },
+      {
+        "title": "Create Entry test with JSON_RTE (30KB) 5 Request",
+        "url": "json_post",
+        "method": "POST",
+        "pathList": ["v3/content_types/jsonrte_size_30kb/entries"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "50",
+          "duration": "5",
+          "unit": "Min"
+        },
+        "size": 30000,
+        "count": 5,
+        "limit": 1,
+        "row": 106
+      },
+      {
+        "title": "Create Entry test with JSON_RTE (30KB) 10 Request",
+        "url": "json_post",
+        "method": "POST",
+        "pathList": ["v3/content_types/jsonrte_size_30kb/entries"],
+        "use": "authtoken",
+        "client": {
+          "type": "persecond",
+          "amount": "20",
+          "duration": "3",
+          "unit": "Min"
+        },
+        "size": 30000,
+        "count": 10,
+        "limit": 1,
+        "row": 107
+      }
+]

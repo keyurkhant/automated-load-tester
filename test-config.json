@@ -1,0 +1,87 @@
+{
+  "url": {
+    "json_post": "https://loader.io/tests/57e016a71df8d017d214b2d63feeb05e",
+    "json_get": "https://loader.io/tests/0e52fc76e1db788fc22095d88937d1a9",
+    "json_put": "https://loader.io/tests/4d82aed13441f06c05c209eaaafb9ccd",
+    "json_getAll": "https://loader.io/tests/ea5b31ab11d29623e093cacac26aa4c2",
+    "entry_get": "https://loader.io/tests/04d051db324974a9cf8fff715bf1eb84",
+    "entry_post": "https://loader.io/tests/ef621007817a19e74fdfef233596dc9c",
+    "entry_put": "https://loader.io/tests/7701077a22dfb8bd61d4d098fd2565ac"
+  },
+  "tests": [
+    {
+      "title": "Update Entry test with JSON_RTE (500KB) 10 Entries 3 Minutes",
+      "url": "json_put",
+      "method": "PUT",
+      "pathList": "../requestBody/updateRequestBody/bodyList500KB/pathList.json",
+      "use": "authtoken",
+      "client": {
+        "type": "persecond",
+        "amount": "1",
+        "duration": "3",
+        "unit": "Min"
+      },
+      "limit": 10,
+      "bodyList": "../requestBody/updateRequestBody/bodyList500KB/bodyList.json",
+      "row": 68
+    },
+    {
+      "title": "Update Entry test with JSON_RTE (500KB) 10 Entries 5 Minutes",
+      "url": "json_put",
+      "method": "PUT",
+      "pathList": "../requestBody/updateRequestBody/bodyList500KB/pathList.json",
+      "use": "authtoken",
+      "client": {
+        "type": "persecond",
+        "amount": "1",
+        "duration": "5",
+        "unit": "Min"
+      },
+      "limit": 10,
+      "bodyList": "../requestBody/updateRequestBody/bodyList500KB/bodyList.json",
+      "row": 69,
+      "only": true
+    },
+    {
+      "title": "Update Entry test with JSON_RTE (500KB) 10 Entries 10 Minutes",
+      "url": "json_put",
+      "method": "PUT",
+      "pathList": "../requestBody/updateRequestBody/bodyList500KB/pathList.json",
+      "use": "authtoken",
+      "client": {
+        "type": "persecond",
+        "amount": "1",
+        "duration": "8",
+        "unit": "Min"
+      },
+      "limit": 10,
+      "bodyList": "../requestBody/updateRequestBody/bodyList500KB/bodyList.json",
+      "row": 70
+    },
+    {
+      "title": "Update Entry test without JSON_RTE (500KB) 200 client/sec",
+      "url": "entry_put",
+      "method": "PUT",
+      "pathList": [
+        "v3/content_types/ctwithoutjsonrte500kb/entries/blt98c882f6097fced1"
+      ],
+      "use": "authtoken",
+      "client": {
+        "type": "persecond",
+        "amount": "200",
+        "duration": "8",
+        "unit": "Min"
+      },
+      "limit": 1,
+      "bodyList": ["../requestBody/entryUpdate500KB.json"],
+      "row": 71
+    }
+  ]
+  ,
+  "envirnoment": {
+    "host_url": "pt1-api.csnonprod.com",
+    "api_key": "blt0346ed5ca6259542",
+    "authtoken": "blt3b6ee9471b1bc752",
+    "management_token": ""
+  }
+}

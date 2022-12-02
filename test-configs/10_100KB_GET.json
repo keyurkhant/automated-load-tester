@@ -1,0 +1,53 @@
+[
+  {
+    "title": "GET Entry test with JSON_RTE (100KB) 10 RTE 200 client/sec",
+    "url": "json_getAll",
+    "method": "GET",
+    "pathList": [
+      "v3/content_types/jsonrte_size_100kb/entries"
+    ],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "200",
+      "duration": "8",
+      "unit": "Min"
+    },
+    "row": 117,
+    "limit": 1
+  },
+  {
+    "title": "GET Entry test with JSON_RTE (30KB) 10 RTE 100 client/sec",
+    "url": "json_getAll",
+    "method": "GET",
+    "pathList": [
+      "v3/content_types/jsonrte_size_100kb/entries"
+    ],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "100",
+      "duration": "5",
+      "unit": "Min"
+    },
+    "row": 118,
+    "limit": 1
+  },
+  {
+    "title": "GET Entry test with JSON_RTE (30KB) 10 RTE 50 client/sec",
+    "url": "json_getAll",
+    "method": "GET",
+    "pathList": [
+      "v3/content_types/jsonrte_size_100kb/entries"
+    ],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "50",
+      "duration": "3",
+      "unit": "Min"
+    },
+    "row": 119,
+    "limit": 1
+  }
+]

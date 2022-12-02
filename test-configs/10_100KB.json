@@ -1,0 +1,53 @@
+[
+  {
+    "title": "Create Entry test with JSON_RTE (100KB) 3 RTE",
+    "url": "json_post",
+    "method": "POST",
+    "pathList": ["v3/content_types/jsonrte_size_100kb/entries"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "100",
+      "duration": "5",
+      "unit": "Min"
+    },
+    "size": 100000,
+    "count": 3,
+    "limit": 1,
+    "row": 113
+  },
+  {
+    "title": "Create Entry test with JSON_RTE (100KB) 5 Request",
+    "url": "json_post",
+    "method": "POST",
+    "pathList": ["v3/content_types/jsonrte_size_100kb/entries"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "100",
+      "duration": "5",
+      "unit": "Min"
+    },
+    "size": 100000,
+    "count": 5,
+    "limit": 1,
+    "row": 114
+  },
+  {
+    "title": "Create Entry test with JSON_RTE (100KB) 10 Request",
+    "url": "json_post",
+    "method": "POST",
+    "pathList": ["v3/content_types/jsonrte_size_100kb/entries"],
+    "use": "authtoken",
+    "client": {
+      "type": "persecond",
+      "amount": "100",
+      "duration": "5",
+      "unit": "Min"
+    },
+    "size": 100000,
+    "count": 10,
+    "limit": 1,
+    "row": 115
+  }
+]
